@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* hexagon */
+.container {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container .hexagonArea {
+  display: flex;
+}
+
+.container .hexagonArea .last {
+  transform: translateY(-45px);
+}
+
+.container .hexagonArea .hexagon {
+  position: relative;
+  width: 12em;
+  height: 14em;
+  margin: -20px 10px;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.container .hexagonArea .hexagon img {
+  width: 20em;
+}
+
+.container .hexagonArea .hexagon:hover {
+  transform: scale(0.8);
+}
+/*hexagon done*/
+
+/* about */
+.part2 {
+  background: #2eb398;
+}
+
+.person img {
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  width: 12em;
+  height: 14em;
+  margin: 3em 10em;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.right {
+  margin: -13% 30%;
+}
+.textright h2 {
+  color: white;
+}
+.textright h3 {
+  opacity: 40%;
+}
+
+.textright p {
+  color: white;
+}
+
+.max-width {
+  height: 25em;
+  margin: 10% 10%;
+}
+
+/*about done*/
+
+/*contact*/
+
+.kontaktside2 {
+  width: 40%;
+}
+
+.containerkontakt {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: -10%;
+  color: white;
+  background-color: #323232;
+  padding: 20px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #2eb398;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2eb398;
+}
+
+.textright2 {
+  padding: 2%;
+}
+
+/*contact done*/
